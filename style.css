@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    color: rgb(219, 10, 10);
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-block-start: 0.40em;
+    margin-block-end: 0.50em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+table {
+    background-color: rgb(59, 17, 17);
+    box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
+    border-radius: 8px;
+}
+
+td {
+    width: 15em;
+    height: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container2 {
+    flex-direction: column;
+    color: white;
+}
+
+.carrossel {
+    background-color: rgb(59, 17, 17);
+    max-width: 140em;
+    height: 30em;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
+}
+
+.filmes {
+    margin: 2em;
+    width: 18rem;
+    height: 25rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.filmes:hover {
+    transform: scale(1.1);
+}
+
+.rectList {
+    background-color: rgb(59, 17, 17);
+    box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
+    border-radius: 8px;
+    max-width: 45em;
+}
+
+.fontList {
+    font-size: 1.2rem;
+    margin-left: 2em;
+    margin-right: 2em;
+    line-height: 1.5em;
+}
+
+.tabela {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divLado {
+    margin-top: 2em;
+    display: flex;
+    gap: 6rem;
+}
+
+/* Para diferentes tamanhos de tela */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
