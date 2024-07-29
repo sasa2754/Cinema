@@ -50,28 +50,25 @@ a {
 }
 
 .container {
+    flex-direction: column;
+    color: white;
     display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-.container2 {
-    flex-direction: column;
-    color: white;
 }
 
 .carrossel {
     background-color: rgb(59, 17, 17);
     max-width: 140em;
-    height: 30em;
+    /* height: 30em; */
+    max-height: 30em;
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
 }
 
 .filmes {
-    margin: 2em;
-    width: 18rem;
-    height: 25rem;
+    /* margin: 2em; */
+    max-width: 18rem;
+    max-height: 25rem;
+    padding: 1.5em;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -105,8 +102,18 @@ a {
 }
 
 /* Para diferentes tamanhos de tela */
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
+@media (max-width: 1700px) {
+    .carrossel {
+        max-width: 60em;
+        height: 30em;
+    }
+    .filmes {
+        margin: 2rem;
+        width: 18rem;
+        height: 25rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
