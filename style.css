@@ -1,12 +1,6 @@
 body {
     background-color: black;
-}
-
-.montserrat {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
 }
 
 header {
@@ -16,8 +10,10 @@ header {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    width: 100em;
+    height: 90em;
 }
 
 h1 {
@@ -31,6 +27,7 @@ table {
     background-color: rgb(59, 17, 17);
     box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
     border-radius: 8px;
+    color: white;
 }
 
 td {
@@ -47,28 +44,40 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* gap: 2em; */
+}
+
+#sla {
+    margin-top: 2%;
+    gap: 2em;
 }
 
 .container {
     flex-direction: column;
     color: white;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .carrossel {
+    display: grid;
     background-color: rgb(59, 17, 17);
-    max-width: 140em;
+    max-width: 90%;
     /* height: 30em; */
-    max-height: 30em;
+    max-height: 90%;
+    height: 450px;
+    width: 2500px;
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
 }
 
 .filmes {
-    /* margin: 2em; */
-    max-width: 18rem;
-    max-height: 25rem;
-    padding: 1.5em;
+    margin: 1em;
+    max-width: 90%;
+    width: 400px;
+    max-height: 90%;
+    height: 400px;
+    /* padding: 2%; */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -80,40 +89,50 @@ a {
     background-color: rgb(59, 17, 17);
     box-shadow: 0 0 30px rgba(136, 136, 136, 0.61);
     border-radius: 8px;
-    max-width: 45em;
+    max-width: 90%;
 }
 
 .fontList {
     font-size: 1.2rem;
     margin-left: 2em;
-    margin-right: 2em;
+    /* margin-right: 2em; */
     line-height: 1.5em;
 }
 
-.tabela {
+/* .tabela {
     display: flex;
     justify-content: flex-end;
-}
+} */
 
-.divLado {
-    margin-top: 2em;
+/* .divLado {
     display: flex;
-    gap: 6rem;
-}
+} */
 
 /* Para diferentes tamanhos de tela */
-@media (max-width: 1700px) {
-    .carrossel {
-        max-width: 60em;
-        height: 30em;
-    }
-    .filmes {
-        margin: 2rem;
-        width: 18rem;
-        height: 25rem;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1680px) {
+
+}
+
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 800px) {
+
 }
